@@ -17,13 +17,16 @@ mongoose
     .then(() => console.info("Mongo Connection successful"))
     .catch(err => console.error("err", err));
 
-// app
+// users
 app.use("/api/users/", require("./routes/api/users"));
 
 // passport
 const passport = require("passport");
 app.use(passport.initialize());
 require("./middleware/passport")(passport);
+
+// posts
+app.use("/api/posts/", require("./routes/api/posts"));
 
 app.listen(PORT, () => {
     console.log(`Server up and running on port ${PORT}`);
