@@ -2,6 +2,28 @@
 
 To do application with login.
 
+API/BE (i.e. server.js)
+
+- 2 routes (Posts, Users)
+- Node
+- Express
+- Mongoose
+
+Middleware
+
+- passport
+
+Client/FE
+
+- React
+- Redux
+
+Database
+
+- Mongodb
+
+## API and database
+
 So we will have two models:
 
 Post:
@@ -30,28 +52,16 @@ Once the end points have been established, we can test via postman:
 
 > On successful login, I received a token.
 
-API/BE (i.e. server.js)
+## Client
 
-- 2 routes (Posts, Users)
-- Node
-- Express
-- Mongoose
+Will use create-react-app as it's the best for initialising react apps.
 
-Middleware
-
-- passport
-
-Client/FE
-
-- React
-- Redux
-
-Database
-
-- Mongodb
+- Linters + prettier
+- 
 
 ## Resources
 
 [Atlas mongodb](https://docs.atlas.mongodb.com/getting-started/)
 [Postman]()
 [Concurrently](https://www.npmjs.com/package/concurrently)
+[Create-react-app Proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development)
