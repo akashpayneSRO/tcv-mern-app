@@ -7,7 +7,7 @@ import {
     DELETE_POST,
     TOGGLE_POSTS_LOADING,
     TOGGLE_POST_LOADING
-} from "../actions/types";
+} from "../types/actionTypes";
 
 const initialState = {
     post: {},

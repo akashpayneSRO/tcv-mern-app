@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import mongo from "../../static/mongo.png";
-import express from "../../static/express.png";
-import react from "../../static/react.png";
-import node from "../../static/node.png";
+// import mongo from "../../static/mongo.png";
+// import express from "../../static/express.png";
+// import react from "../../static/react.png";
+// import node from "../../static/node.png";
 import "./css/common.css";
 
 const Landing = () => (
@@ -13,10 +13,10 @@ const Landing = () => (
     >
         {" "}
         <Row className="mb-4">
-            <p className="text-secondary h3"> Blogging Application</p>
+            <p className="text-secondary h3"> Todo Application</p>
         </Row>
         <Row>
-            <Col>
+            {/* <Col>
                 <img src={mongo} alt="mongo" className="img-fluid" />
             </Col>
             <Col>
@@ -27,7 +27,7 @@ const Landing = () => (
             </Col>
             <Col>
                 <img src={node} alt="node" className="img-fluid" />
-            </Col>
+            </Col> */}
         </Row>
     </Container>
 );

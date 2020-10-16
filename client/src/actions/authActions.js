@@ -6,10 +6,13 @@ import { SET_CURRENT_USER, TOGGLE_USER_LOADING } from "../types/actionTypes";
 import { resetPost } from "./postActions";
 import { setErrors } from "./errorActions";
 
+axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
+axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+
 export const registerUser = (userData, history) => dispatch => {
     dispatch(toggleUserLoading());
     axios
-        .post("/api/users/signup", userData)
+        .post(`http://localhost:5000/api/users/signup`, userData)
         .then(res => {
             dispatch(toggleUserLoading());
             localStorage.setItem(
@@ -19,7 +22,8 @@ export const registerUser = (userData, history) => dispatch => {
             history.push("/login");
         })
         .catch(err => {
-            dispatch(setErrors(err.response.data));
+            console.error(err);
+            dispatch(setErrors(err.response?.data));
             dispatch(toggleUserLoading());
         });
 };
@@ -27,7 +31,7 @@ export const registerUser = (userData, history) => dispatch => {
 export const loginUser = userData => dispatch => {
     dispatch(toggleUserLoading());
     axios
-        .post("/api/users/login", userData)
+        .post("http://localhost:5000/api/users/login", userData)
         .then(res => {
             dispatch(resetPost());
             const { token } = res.data;
@@ -38,7 +42,8 @@ export const loginUser = userData => dispatch => {
             dispatch(toggleUserLoading());
         })
         .catch(err => {
-            dispatch(setErrors(err.response.data));
+            console.error(err);
+            dispatch(setErrors(err.response?.data));
             dispatch(toggleUserLoading());
         });
 };

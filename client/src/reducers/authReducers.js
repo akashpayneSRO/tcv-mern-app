@@ -1,4 +1,4 @@
-import { SET_CURRENT_USER, TOGGLE_USER_LOADING } from "../actions/types";
+import { SET_CURRENT_USER, TOGGLE_USER_LOADING } from "../types/actionTypes";
 const isEmpty = require("is-empty");
 
 const initialState = {

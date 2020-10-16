@@ -19,7 +19,7 @@ const Navigationbar = ({ auth, onClick }) => (
                className="d-inline-block align-top"
                alt=""
             />
-            {" Bloggy "}
+            {" TCV APP "}
          </Navbar.Brand>
       </Link>
       <Nav className="ml-auto">
