@@ -62,6 +62,30 @@ Will use create-react-app as it's the best for initialising react apps.
 - Redux
 - Sass
 
+We will need auth, login and layout components, as well as post and user components.
+
+Auth:
+
+- Login/Signup
+
+Form:
+
+- Inputs
+- Validation
+
+Layout:
+
+- Landing page
+- Navbar/Footer
+
+Posts:
+
+- Post: List, view, Form
+
+Users:
+
+- User page
+
 ## Resources
 
 [Atlas mongodb](https://docs.atlas.mongodb.com/getting-started/)
@@ -69,6 +93,7 @@ Will use create-react-app as it's the best for initialising react apps.
 [Concurrently](https://www.npmjs.com/package/concurrently)
 [Create-react-app Proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development)
 [Redux tools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
+[react-bootstrap](https://react-bootstrap.github.io/)
 
 ```bash
 Shortcuts
