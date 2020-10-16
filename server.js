@@ -20,6 +20,10 @@ mongoose
 // app
 app.use("/api/users/", require("./routes/api/users"));
 
+// passport
+const passport = require("passport");
+app.use(passport.initialize());
+require("./middleware/passport")(passport);
 
 app.listen(PORT, () => {
     console.log(`Server up and running on port ${PORT}`);
