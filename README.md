@@ -68,6 +68,7 @@ Will use create-react-app as it's the best for initialising react apps.
 [Postman]()
 [Concurrently](https://www.npmjs.com/package/concurrently)
 [Create-react-app Proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development)
+[Redux tools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
 
 ```bash
 Shortcuts
