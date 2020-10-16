@@ -1,8 +1,8 @@
 # tcv-mern-app
 
-To do application with logic.
+To do application with login.
 
-So we will have two models: User and Post.
+So we will have two models:
 
 Post:
 
@@ -18,6 +18,9 @@ User:
 - password
 
 > possible add created_at, updated_at and active if time.
+
+Once the end points have been established, we can test via postman. 
+
 
 API/BE (i.e. server.js)
 
