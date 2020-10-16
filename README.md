@@ -19,8 +19,16 @@ User:
 
 > possible add created_at, updated_at and active if time.
 
-Once the end points have been established, we can test via postman. 
+Once the end points have been established, we can test via postman:
 
+- Signup Endpoint — /api/users/signup
+- Login Endpoint — /api/users/login
+- Creating Post — /api/posts/create
+- Edit Post — /api/posts/update/:id
+- Fetch Post — /api/posts/
+- Deleting Post — /api/posts/delete/:id
+
+> On successful login, I received a token.
 
 API/BE (i.e. server.js)
 
