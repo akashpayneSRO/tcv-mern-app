@@ -5,13 +5,14 @@ const mongoose = require("mongoose");
 require("dotenv").config(); // for loading environment variables
 const app = express();
 const PORT = process.env.PORT || 5000;
+const MONGO_URI = process.env.MONGO_URI;
+const DOMAIN = process.env.DOMAIN || "http://localhost"
 
 // middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // db
-const MONGO_URI = process.env.MONGO_URI;
 mongoose
     .connect(MONGO_URI, { useNewUrlParser: true })
     .then(() => console.info("Mongo Connection successful"))
@@ -29,5 +30,5 @@ require("./middleware/passport")(passport);
 app.use("/api/posts/", require("./routes/api/posts"));
 
 app.listen(PORT, () => {
-    console.log(`Server up and running on port ${PORT}`);
+    console.log(`Server up and running on port ${DOMAIN}:${PORT}`);
 });
