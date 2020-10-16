@@ -16,7 +16,9 @@ mongoose
     .connect(MONGO_URI, { useNewUrlParser: true })
     .then(() => console.info("Mongo Connection successful"))
     .catch(err => console.error("err", err));
+
 // app
+app.use("/api/users/", require("./routes/api/users"));
 
 
 app.listen(PORT, () => {
