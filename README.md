@@ -60,7 +60,7 @@ Will use create-react-app as it's the best for initialising react apps.
 - Bootstrap
 - React
 - Redux
--
+- Sass
 
 ## Resources
 
