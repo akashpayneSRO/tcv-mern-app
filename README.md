@@ -5,15 +5,17 @@ To do application with logic.
 So we will have two models: User and Post.
 
 Post:
-* title
-* body
-* author
-* date
+
+- title
+- body
+- author
+- date
 
 User:
-* username
-* email
-* password
+
+- username
+- email
+- password
 
 > possible add created_at, updated_at and active if time.
 
@@ -37,8 +39,7 @@ Database
 
 - Mongodb
 
-
 ## Resources
 
-[Atlas  mongodb](https://docs.atlas.mongodb.com/getting-started/)
+[Atlas mongodb](https://docs.atlas.mongodb.com/getting-started/)
 [Postman]()
