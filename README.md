@@ -60,7 +60,7 @@ Will use create-react-app as it's the best for initialising react apps.
 - Bootstrap
 - React
 - Redux
-- 
+-
 
 ## Resources
 
@@ -68,3 +68,14 @@ Will use create-react-app as it's the best for initialising react apps.
 [Postman]()
 [Concurrently](https://www.npmjs.com/package/concurrently)
 [Create-react-app Proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development)
+
+```bash
+Shortcuts
+-----
+imr - import React from 'react'
+impt - import PropTypes from 'prop-types';
+sfc - Stateless Function Component
+imrc - import React, {Component} from 'react'
+cc - Class Component
+ccc - Class Component with Constructor
+```
