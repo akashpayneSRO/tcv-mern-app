@@ -57,6 +57,9 @@ Once the end points have been established, we can test via postman:
 Will use create-react-app as it's the best for initialising react apps.
 
 - Linters + prettier
+- Bootstrap
+- React
+- Redux
 - 
 
 ## Resources
