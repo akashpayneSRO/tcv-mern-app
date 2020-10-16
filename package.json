@@ -2,7 +2,11 @@
   "name": "tcv-mern-app",
   "version": "1.0.0",
   "description": "tcv MERN application",
-  "main": "index.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
   "repository": "git@github.com:akashpayneSRO/tcv-mern-app.git",
   "author": "akash <akashpayne2@gmail.com>",
   "license": "MIT",
@@ -18,5 +22,8 @@
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "validator": "^13.1.17"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.5"
   }
 }
